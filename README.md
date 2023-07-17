@@ -13,13 +13,13 @@ We place great value in education and experience; but we also recognize that tal
 
 ## The challenge:
 You need to build an authentication screen and its supporting API with React and Node.js
-The module needs to support MFA via email besides the usual user/password set.
+The module needs to support a dynamic MFA validation besides the usual user/password set.
 
 Here is the expected flow in a nutshell:
 - A user comes to the login page and enters its email
 - If no user with the required email exists, just create it
 - If the user has not been active for more than 7 days, ask for a one-time-password
-	- It must be 6 digits, the API should print it in console.log for challenge validation purpose
+	- It must be 6 digits, the API should print it in console.log for challenge validation purpose -- no need to plug an actual email delivery system or any other form of MFA token delivery.
 - If the user has no password (was newly created), ask for a new password and set it
 	- On success, return the JWT tokens to be further used by the user
 - If the user has a password, ask for the password. 
