@@ -39,6 +39,13 @@ BFF ->> FE: { session: <session-hash>, challenge: 'set-password' }
 FE ->> BFF: { session: <session-hash>, newPassword: 'FU(iolkevn23$90' }
 BFF ->> FE: { status: 'OK', jwtToken: {...}}
 ```
+
+
+### Some extra considerations
+1. This is your presentation letter. Don't shy away from adding whatever extension to the requirements you think would be interesting to discuss during the technical interview.
+2. We use **Kotlin** for our backend services (except for the BFF's which are done in NestJS). You can get trained on the job, but doing the backend part of this assignment in Kotlin or Java will earn you some extra points.
+
+
 ---
 
 ### Clone this project!
